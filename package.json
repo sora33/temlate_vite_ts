@@ -10,15 +10,17 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
     "format": "prettier --write --loglevel=warn 'src/**/*.{js,jsx,ts,tsx,html,json,gql,graphql}'",
-    "fix":"npmrun--silentformat;npmrun--silentlint:fix",
+    "fix": "npmrun--silentformat;npmrun--silentlint:fix",
     "preinstall": "npx typesync || :"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.10",
+    "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
